@@ -1,0 +1,28 @@
+{
+   "people" : [
+      {
+         "irc" : "sfoster",
+         "skype" : "samfosteriam",
+         "twitter" : "samfosteriam",
+         "notes" : "This is Me",
+         "name" : "Sam Foster",
+         "avatar" : "https://twimg0-a.akamaihd.net/profile_images/422407517/sfoster_bwheadshot-w164-h200_reasonably_small.gif"
+      },
+      {
+         "irc" : "foo",
+         "skype" : "foothinger",
+         "twitter" : "",
+         "notes" : "",
+         "name" : "This is Foo"
+      },
+      {
+         "name" : "bar"
+      },
+      {
+         "name" : "baz"
+      },
+      {
+         "name" : "buzz"
+      }
+   ]
+}
