@@ -1,0 +1,10 @@
+{{#people}}
+<li class="profile">
+	<h2>{{name}}</h2>
+	<div class="avatar" style="background-image:url({{avatar}})"></div>
+	<ul class="aka">{{#aliases}}
+		<li>{{name}}:{{value}}</li>
+	{{/aliases}}</ul>
+	<p class="notes">{{notes}}</p>
+</li>
+{{/people}}
