@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Page Title</title>
+	<title>Who-You?</title>
 	<style>
 		.profiles {
 			list-style-type: none;
@@ -41,12 +41,12 @@
 	            jquery: 'https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min',
 				dojo: 'http://sfoster.dojotoolkit.org/dojobox/1.7-branch/dojo',
 				dojox: 'http://sfoster.dojotoolkit.org/dojobox/1.7-branch/dojox',
-				img: location.pathname.replace(/\/[\w.]+$/, '/img')
+				resources: location.pathname.replace(/\/[\w.]*$/, '/resources')
 			}
 		}, ['main']);
 	</script>
 </head>
-<body class="claro">
+<body class="">
 	<ul id="profileList" class="profiles"></ul>
 </body>
 </html>
