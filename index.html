@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Page Title</title>
+	<style>
+		.profiles {
+			list-style-type: none;
+			margin: 1em 0; padding: 0;
+		}
+		.profile {
+			position: relative;
+			padding: 5px;
+			padding-left: 200px;
+			border-radius: 6px;
+			border: 1px solid #999;
+			margin: 0 0 0.8em 0;
+			min-height: 160px;
+		}
+		.profile h2 {
+			margin: 0;
+		}
+		.avatar {
+			position: absolute;
+			top: 5px; left: 5px;
+			min-height: 160px;
+			min-width: 160px;
+			border-radius: 3px;
+			border: 1px solid #ccc;
+			background: #eee no-repeat;
+		}
+	</style>
+	<script src="http://sfoster.dojotoolkit.org/sandbox/require-1.0.1.js"></script>
+	<script>
+		require({
+			// configure our AMD loader
+			baseUrl: './lib',
+	        priority: ['jquery'],
+			paths: {
+				// package mappings
+	            jquery: 'https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min',
+				dojo: 'http://sfoster.dojotoolkit.org/dojobox/1.7-branch/dojo',
+				dojox: 'http://sfoster.dojotoolkit.org/dojobox/1.7-branch/dojox',
+				img: location.pathname.replace(/\/[\w.]+$/, '/img')
+			}
+		}, ['main']);
+	</script>
+</head>
+<body class="claro">
+	<ul id="profileList" class="profiles"></ul>
+</body>
+</html>
