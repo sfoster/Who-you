@@ -4,7 +4,9 @@ who-you
 A testbed project for a convenient-yet-light(ish)-weight framework for a web/mobile-web app
 
 Specifically, using:
-* jquery (complete, a subset or some ligher lib or with a similar interface) for DOM querying/creation, ajax
+
+* jquery (complete, a subset or some ligher lib or with a similar interface) for DOM querying, ajax
+* Mustache.js (or a similar template engine) for DOM creation and cheap 'views'
 * AMD for module loading and code organization 
 * data store concepts (and possibly implementations) from Dojo
 
