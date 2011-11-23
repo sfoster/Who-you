@@ -4,11 +4,21 @@
 	<meta charset="utf-8">
 	<title>Who-You?</title>
 	<style>
-		.profiles {
-			list-style-type: none;
+		.panel {
+			
+		}
+		.wide {
+			width: 100%;
+		}
+		.narrow {
+			width: 33%;
+		}
+		
+		ul.vertical, ul.horizontal {
 			margin: 1em 0; padding: 0;
 		}
 		.profile {
+			list-style-type: none;
 			position: relative;
 			padding: 5px;
 			padding-left: 200px;
@@ -47,6 +57,11 @@
 	</script>
 </head>
 <body class="">
-	<ul id="profileList" class="profiles"></ul>
+	<div class="panel wide" id="peoplePanel">
+		<ul class="profiles"></ul>
+	</div>
+	<div class="panel narrow" id="usersPanel">
+		<ul class="profiles"></ul>
+	</div>
 </body>
 </html>

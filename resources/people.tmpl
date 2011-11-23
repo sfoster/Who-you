@@ -1,12 +1,12 @@
-{{#people}}
-<li class="profile" data-userid="{{id}}">
-	<h2>{{name}}</h2>
-	<div class="avatar" style="background-image:url({{avatar}})"></div>
-	<ul class="aka">{{#aliases}}
-		<li>{{name}}:{{value}}</li>
-	{{/aliases}}</ul>
-	<p class="notes">{{notes}}</p>
-</li>
-{{/people}}{{^people}}
-  <li>No people :(</li>
-{{/people}}
+<ul class="{{listclass}}">{{#people}}
+	<li class="profile {{itemclass}}" data-userid="{{id}}">
+		<h2>{{name}}</h2>
+		<div class="avatar" style="background-image:url({{avatar}})"></div>
+		<ul class="aka">{{#aliases}}
+			<li>{{name}}:{{value}}</li>
+		{{/aliases}}</ul>
+		<p class="notes">{{notes}}</p>
+	</li>
+	{{/people}}{{^people}}
+	 <li>No people :(</li>
+{{/people}}</ul>
