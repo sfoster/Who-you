@@ -8,7 +8,7 @@ var router = new(journey.Router);
 var users = [], byId = {};
 var identifier = 'username';
 
-fs.readFile('./users.json', function(err, filestr){
+fs.readFile('./data/users.json', function(err, filestr){
 	users = JSON.parse(filestr);
 	users.forEach(function(user){
 		byId[user[identifier]] = user;
